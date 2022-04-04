@@ -4,4 +4,6 @@ Laravel 9.6 Livewire eCommerce with RajaOngkir Shipment dan Midtrans Gateway Pay
 
 <p dir="auto" align="center"> [![Fire-Shot-Capture-036-Lara-Shop-Home-localhost.png](https://i.postimg.cc/ydfjrxQc/Fire-Shot-Capture-036-Lara-Shop-Home-localhost.png)](https://postimg.cc/YGWQvrwC) </p>
 
+<p dir="auto" align="center">
 [![Fire-Shot-Capture-036-Lara-Shop-Home-localhost.png](https://i.postimg.cc/ydfjrxQc/Fire-Shot-Capture-036-Lara-Shop-Home-localhost.png)](https://postimg.cc/YGWQvrwC)
+</p>
