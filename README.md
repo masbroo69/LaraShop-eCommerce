@@ -19,7 +19,7 @@
 <li>Set your Midtrans credentials in your <code>.env</code> file. Specifically <code>MIDTRANS_SERVER_KEY</code> and <code>MIDTRANS_CLIENT_KEY</code></li>
 <li>Set your RajaOngkir credentials in your <code>.env</code> file. Specifically <code>RAJAONGKIR_API_KEY</code> and <code>RAJAONGKIR_PACKAGE</code></code> and <code>RAJAONGKIR_ORIGIN</code></li>
 <li>Set your Stripe credentials in your <code>.env</code> file. Specifically <code>STRIPE_KEY</code> and <code>STRIPE_SECRET</code></li>            
-<li>Set your PayPal credentials in your <code>.env</code> file. Specifically <code>STRIPE_KEY</code> and <code>STRIPE_SECRET</code></li> This will migrate the database and run any seeders necessary. See <a href="https://www.youtube.com/watch?v=L3EbWJmmyjo&amp;index=18&amp;list=PLEhEHUEU3x5oPTli631ZX9cxl6cU_sDaR" rel="nofollow">this episode</a>.</li>
+<li>Set your PayPal credentials in your <code>.env</code> file. Specifically <code>STRIPE_KEY</code> and <code>STRIPE_SECRET</code></li> This will migrate the database and run any seeders necessary. See <a href="https://www.youtube.com/watch?v=xfSks-NdHPw&list=PLz_YkiqIHesvPtvLl2Wz5FtuW44dBt199" rel="nofollow">this episode</a>.</li>
 <li><code>npm install</code></li>
 <li><code>npm run dev</code></li>
 <li><code>php artisan migrate:fresh --seed</code></li>
