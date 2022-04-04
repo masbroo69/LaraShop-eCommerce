@@ -1,0 +1,2 @@
+# LaraShop
+Laravel Livewire eCommerce
