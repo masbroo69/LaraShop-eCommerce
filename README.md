@@ -7,8 +7,8 @@
 <h1 dir="auto"><a id="user-content-laravel-ecommerce-example" class="anchor" aria-hidden="true" href="#laravel-ecommerce-example"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>
 # LaraShop Ecommerce Example</h1>
 <p> Laravel 9.6 Livewire eCommerce with RajaOngkir Shipment dan Midtrans Gateway Payments</p>
-<p dir="auto">Code for YouTube video series: <a href="https://www.youtube.com/watch?v=cqPpYAMMcmk&t=54s" rel="nofollow">https://www.youtube.com/watch?v=cqPpYAMMcmk&t=54s</a></p>
-<p dir="auto">Website Demo: <a href="https://laravelecommerceexample.ca" rel="nofollow">https://laravelecommerceexample.ca</a>. The demo has limited permissions. Install locally for full access.</p>
+<p dir="auto">Code for YouTube video series: <a href="https://www.youtube.com/watch?v=xfSks-NdHPw&list=PLz_YkiqIHesvPtvLl2Wz5FtuW44dBt199" rel="nofollow">https://www.youtube.com/watch?v=cqPpYAMMcmk&t=54s</a></p>
+<p dir="auto">Website Demo: <a href="https://www.youtube.com/watch?v=cqPpYAMMcmk&t=54s" rel="nofollow">https://laravelecommerceexample.ca</a>. The demo has limited permissions. Install locally for full access.</p>
 <h2 dir="auto"><a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Installation</h2>
 <ol dir="auto">
 <li>Clone the repo and <code>cd</code> into it</li>
@@ -16,14 +16,13 @@
 <li>Rename or copy <code>.env.example</code> file to <code>.env</code></li>
 <li><code>php artisan key:generate</code></li>
 <li>Set your database credentials in your <code>.env</code> file</li>
-<li>Set your Stripe credentials in your <code>.env</code> file. Specifically <code>STRIPE_KEY</code> and <code>STRIPE_SECRET</code></li>
-<li>Set your Algolia credentials in your <code>.env</code> file. Specifically <code>ALGOLIA_APP_ID</code> and <code>ALGOLIA_SECRET</code>. See <a href="https://www.youtube.com/watch?v=Sa0R_2aHICw&amp;index=22&amp;list=PLEhEHUEU3x5oPTli631ZX9cxl6cU_sDaR" rel="nofollow">this episode</a>.</li>
-<li>Set your Braintree credentials in your <code>.env</code> file if you want to use PayPal. Specifically <code>BT_MERCHANT_ID</code>, <code>BT_PUBLIC_KEY</code>, <code>BT_PRIVATE_KEY</code>. See <a href="https://www.youtube.com/watch?v=pv8pxwBxfA4" rel="nofollow">this episode</a>. If you don't, it should still work but won't show the paypal payment at checkout.</li>
-<li>Set your <code>APP_URL</code> in your <code>.env</code> file. This is needed for Voyager to correctly resolve asset URLs.</li>
-<li>Set <code>ADMIN_PASSWORD</code> in your <code>.env</code> file if you want to specify an admin password. If not, the default password is 'password'</li>
-<li><code>php artisan ecommerce:install</code>. This will migrate the database and run any seeders necessary. See <a href="https://www.youtube.com/watch?v=L3EbWJmmyjo&amp;index=18&amp;list=PLEhEHUEU3x5oPTli631ZX9cxl6cU_sDaR" rel="nofollow">this episode</a>.</li>
+<li>Set your Midtrans credentials in your <code>.env</code> file. Specifically <code>MIDTRANS_SERVER_KEY</code> and <code>MIDTRANS_CLIENT_KEY</code></li>
+<li>Set your RajaOngkir credentials in your <code>.env</code> file. Specifically <code>RAJAONGKIR_API_KEY</code> and <code>RAJAONGKIR_PACKAGE</code></code> and <code>RAJAONGKIR_ORIGIN</code></li>
+<li>Set your Stripe credentials in your <code>.env</code> file. Specifically <code>STRIPE_KEY</code> and <code>STRIPE_SECRET</code></li>            
+<li>Set your PayPal credentials in your <code>.env</code> file. Specifically <code>STRIPE_KEY</code> and <code>STRIPE_SECRET</code></li> This will migrate the database and run any seeders necessary. See <a href="https://www.youtube.com/watch?v=L3EbWJmmyjo&amp;index=18&amp;list=PLEhEHUEU3x5oPTli631ZX9cxl6cU_sDaR" rel="nofollow">this episode</a>.</li>
 <li><code>npm install</code></li>
 <li><code>npm run dev</code></li>
+<li><code>php artisan migrate:fresh --seed</code></li>
 <li><code>php artisan serve</code> or use Laravel Valet or Laravel Homestead</li>
 <li>Visit <code>localhost:8000</code> in your browser</li>
 <li>Visit <code>/admin</code> if you want to access the Voyager admin backend. Admin User/Password: <code>admin@admin.com/password</code>. Admin Web User/Password: <code>adminweb@adminweb.com/password</code></li>
